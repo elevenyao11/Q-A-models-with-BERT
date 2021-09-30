@@ -21,3 +21,8 @@ Our slot-filling pipeline consisted of 3-steps: (1) identify the intent of the u
    
    In addition to the main approach, in parallel, we tried to build an end-to-end pipeline using RASA, a library used mostly for chatbot applications. With proper configuration and sufficient training, such a pipeline took in utterances in `.txt` format, and generated slots predictions in `.json` format, which was then converted into `.csv` for scoring. In terms of performance, this approach scored 40% in accuracy on the validtion data. After fine-tuning, the accuracy increased to around 70%. Though the RASA approach looked fresh and promising, we decided to take the other approach which did better on both validation and test data.
    
+## Contributors
+- Yundong Yao 
+- Linxuan Yang
+- Jan Urquico
+- Alex Chen

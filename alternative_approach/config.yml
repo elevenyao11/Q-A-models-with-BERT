@@ -1,0 +1,18 @@
+language: "en_core_web_sm"
+
+
+pipeline:
+  - name: SpacyNLP
+    model: "en_core_web_sm"
+  - name: SpacyTokenizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: "char_wb"
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 700
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
